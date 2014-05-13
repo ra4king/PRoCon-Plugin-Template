@@ -273,9 +273,25 @@ namespace PRoConEvents
 
 		public string GetPluginDescription()
 		{
-			return @"<h1>" + GetPluginName() + @"</h1>
+			return @"
+<h1>Your Title Here</h1>
+<p>TBD</p>
 
-<p>This is a sample description</p>
+<h2>Description</h2>
+<p>TBD</p>
+
+<h2>Commands</h2>
+<p>TBD</p>
+
+<h2>Settings</h2>
+<p>TBD</p>
+
+<h2>Development</h2>
+<p>TBD</p>
+<h3>Changelog</h3>
+<blockquote><h4>1.0.0.0 (15-SEP-2012)</h4>
+	- initial version<br/>
+</blockquote>
 ";
 		}
 
