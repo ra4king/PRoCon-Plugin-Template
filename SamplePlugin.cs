@@ -303,6 +303,8 @@ namespace PRoConEvents
 		public List<CPluginVariable> GetDisplayPluginVariables()
 		{
 			List<CPluginVariable> variables = new List<CPluginVariable>();
+			
+			variables.Add(new CPluginVariable("Debug", typeof(bool), debug));
 
 			return variables;
 		}
@@ -314,6 +316,8 @@ namespace PRoConEvents
 
 		public void SetPluginVariable(string variable, string value)
 		{
+			if (variable.Equals("Debug"))
+				debug = bool.Parse(value);
 		}
 	}
 }
